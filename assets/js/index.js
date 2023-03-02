@@ -7,6 +7,7 @@ $(function () {
       { icon: 3, title: "提示" },
       function (index) {
         localStorage.removeItem("token");
+        localStorage.removeItem("userInfo");
         location.href = "/login.html";
         layer.close(index);
       }
@@ -25,6 +26,7 @@ function getUserInfo() {
       }
       //  渲染用户信息
       renderAvatar(res.data);
+      localStorage.setItem("userInfo", JSON.stringify(res.data));
     },
   });
 }
