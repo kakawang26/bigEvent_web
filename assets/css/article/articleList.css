@@ -1,0 +1,6 @@
+.layui-form-item {
+  display: flex;
+}
+.layui-form-select {
+  margin-right: 10px;
+}

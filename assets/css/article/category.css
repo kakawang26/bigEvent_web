@@ -1,0 +1,15 @@
+.layui-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dialog {
+  display: none;
+  margin-top: 20px;
+ 
+}
+
+.layui-input {
+  width: 350px;
+}
